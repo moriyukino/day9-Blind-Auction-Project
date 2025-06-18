@@ -1,0 +1,26 @@
+travel_log = {
+    "France": ["Paris", "Lille", "Dijon"],
+    "Germany": ["Stuttgart", "Berlin"],
+}
+#print lille
+print(travel_log["France"][1])
+
+#ネストされたリストの中から"D"だけを取り出す
+nested_list = ["A","B",["C","D"]]
+print(nested_list[2][1])
+
+#辞書の中に辞書を入れる,"Stuttgart"を印刷する
+
+travel_log = {
+    "France": {
+        "cities_visited":["Paris", "Lille", "Dijon"],
+        "total_visits":12
+    },
+    "Germany":{
+        "cities_visited":["Berlin","Hamburg","Stuttgart"],
+        "total_visits":5
+
+    }
+}
+
+print(travel_log["Germany"]["cities_visited"][2])
